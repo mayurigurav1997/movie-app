@@ -1,0 +1,40 @@
+div{
+  display:block;
+}
+.movie-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  grid-gap: 1rem;
+  /* gap: 1rem; */
+  justify-items: center;
+  /* border: 1px solid blue; */
+}
+.movie-container {
+  /* height: 650px; */
+  width: 340px;
+  /* border: 1px solid red; */
+}
+.movie-poster {
+  height: 640px;
+  width: 340px;
+  object-fit: cover;
+}
+.movie-specs {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.movie-name {
+  font-size: 24px;
+  margin: 0;
+}
+.movie-rating {
+  /* border: 1px solid red; */
+}
+p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
