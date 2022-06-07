@@ -2,12 +2,20 @@ div{
   display:block;
 }
 .movie-list {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
-  grid-gap: 1rem;
-  /* gap: 1rem; */
-  justify-items: center;
+  /* display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); */
+  /* grid-gap: 1rem; */
+  /* gap: 1rem;
+  justify-items: center; */
   /* border: 1px solid blue; */
+
+  display: flex;
+  /* makes page responsive */
+  flex-wrap: wrap;   
+  justify-content: space-around;
+  gap:10px;
+  padding: 20px 20px 10px 30px ;
+  /* border: 20px solid red; */
 }
 .movie-container {
   /* height: 650px; */
@@ -31,10 +39,36 @@ div{
 .movie-rating {
   /* border: 1px solid red; */
 }
+.movie-summary{
+  margin-top:0px;
+}
 p {
   display: block;
   margin-block-start: 1em;
   margin-block-end: 1em;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
+}
+
+
+.counter-container{
+  display:flex;
+  gap:10px;
+  justify-content: flex-start;
+
+}
+.like-button, .dislike-button{
+  font-size: 18px;
+  width: 70px;
+  height: 36px;
+  border:none;
+  background-color: rgb(194, 226, 244);
+  border-radius:15%;
+}
+
+.add-movie-form{
+  display: flex;
+  flex-direction:column;
+  gap:10px;
+  padding:24px;
 }
