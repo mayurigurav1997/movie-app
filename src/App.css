@@ -72,3 +72,11 @@ p {
   gap:10px;
   padding:24px;
 }
+.not-found{
+  width:100%;;
+  max-height: 700px;
+  object-fit:contain;
+}
+.movie-detail-container{
+  max-width: 900px;
+}
